@@ -217,12 +217,12 @@ export default function DeepFlixCV() {
           <img
             src={selectedProfile.section?.image || "https://via.placeholder.com/800x200.png?text=Section+Image"}
             alt={selectedProfile.section?.title || "Section"}
-            className="w-full max-h-[300px] object-contain rounded-xl mb-6"
+            className="w-full max-h-[350px] object-cover rounded-xl mb-6"
           />
-          <h2 className="text-3xl font-bold mb-2 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center text-white">
             {selectedProfile.section?.title || "Untitled Section"}
           </h2>
-          <ul className="text-left max-w-3xl mx-auto list-disc list-inside text-zinc-300 text-sm mb-6">
+          <ul className="text-left max-w-3xl mx-auto list-disc list-inside text-zinc-300 text-base md:text-lg mb-6">
             {selectedProfile.section?.bullets?.map((item, i) => (
               <li key={i}>{item}</li>
             )) || <li>No highlights available.</li>}
