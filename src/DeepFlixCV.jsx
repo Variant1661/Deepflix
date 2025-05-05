@@ -143,7 +143,7 @@ export default function DeepFlixCV() {
           <p className="text-zinc-400 mt-3">Loading profiles…</p>
         </div>
       ) : !selectedProfile ? (
-        <div className="px-6 py-10">
+        <div className="px-6 py-10 min-h-screen flex flex-col items-center justify-start">
           <div className="mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Featured Preview</h2>
             {safeSection.image && (
@@ -171,7 +171,7 @@ export default function DeepFlixCV() {
             )}
           </div>
 
-          <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-center">
+          <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-center">
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
@@ -187,7 +187,7 @@ export default function DeepFlixCV() {
           </div>
 
           <h2 className="text-3xl font-bold mb-8 text-center">Who's viewing?</h2>
-          <div className="flex justify-center gap-6 flex-wrap">
+          <div className="flex justify-center gap-10 flex-wrap">
             {profiles.map((p) => (
               <motion.div
                 key={p.id}
