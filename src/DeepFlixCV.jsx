@@ -1,7 +1,7 @@
 // Netflix-style CV with carousels and dynamic stats
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "./components/ui/button";
 import { Download } from "lucide-react";
 
 const tudum = new Audio("https://assets.mixkit.co/sfx/download/mixkit-game-show-suspense-waiting-667.wav");
