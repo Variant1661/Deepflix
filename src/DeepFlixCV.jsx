@@ -217,7 +217,7 @@ export default function DeepFlixCV() {
           <img
             src={selectedProfile.section?.image || "https://via.placeholder.com/800x200.png?text=Section+Image"}
             alt={selectedProfile.section?.title || "Section"}
-            className="w-full h-60 object-cover rounded-xl mb-6"
+            className="w-full max-h-[300px] object-contain rounded-xl mb-6"
           />
           <h2 className="text-3xl font-bold mb-2 text-center">
             {selectedProfile.section?.title || "Untitled Section"}
