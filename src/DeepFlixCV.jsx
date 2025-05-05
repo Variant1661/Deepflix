@@ -145,7 +145,7 @@ export default function DeepFlixCV() {
       ) : !selectedProfile ? (
         <div className="px-6 py-10">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold mb-4">Featured Preview</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Featured Preview</h2>
             {safeSection.image && (
               <motion.div
                 key={safeProfile.id}
@@ -157,13 +157,13 @@ export default function DeepFlixCV() {
                 <img
                   src={safeSection.image}
                   alt="Preview"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 md:h-80 object-cover rounded-xl"
                 />
                 <div className="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full p-4">
-                  <h3 className="text-xl font-bold">
+                  <h3 className="text-2xl md:text-3xl font-bold">
                     {safeSection.title || "Preview"}
                   </h3>
-                  <p className="text-sm text-zinc-400 mt-1">
+                  <p className="text-base md:text-lg text-zinc-400 mt-2">
                     {safeSection.bullets?.[0] || "Highlight loading..."}
                   </p>
                 </div>
@@ -198,7 +198,7 @@ export default function DeepFlixCV() {
                 <img
                   src={p.avatar}
                   alt={p.name}
-                  className="rounded-full w-24 h-24 object-cover border-2 border-red-600 mb-2"
+                  className="rounded-full w-28 h-28 object-cover border-4 border-red-600 mb-3"
                 />
                 <p className="text-white text-sm font-semibold">{p.name}</p>
               </motion.div>
