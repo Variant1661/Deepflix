@@ -157,7 +157,7 @@ export default function DeepFlixCV() {
                 <img
                   src={safeSection.image}
                   alt="Preview"
-                  className="w-full h-64 md:h-80 object-cover rounded-xl"
+                  className="w-full aspect-[16/9] object-cover rounded-xl"
                 />
                 <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6">
                   <h3 className="text-2xl md:text-3xl font-bold">
@@ -171,7 +171,7 @@ export default function DeepFlixCV() {
             )}
           </div>
 
-          <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-center">
+          <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-center">
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
@@ -180,8 +180,8 @@ export default function DeepFlixCV() {
                 transition={{ delay: i * 0.2 }}
                 className="bg-zinc-800 p-4 rounded-lg border border-zinc-700 shadow"
               >
-                <p className="text-xl font-semibold text-green-400 truncate">{s.value}{s.suffix}</p>
-                <p className="text-xs text-zinc-300 mt-1">{s.label}</p>
+                <p className="text-2xl font-bold text-green-400">{s.value}{s.suffix}</p>
+                <p className="text-sm text-zinc-300 mt-1">{s.label}</p>
               </motion.div>
             ))}
           </div>
@@ -198,7 +198,7 @@ export default function DeepFlixCV() {
                 <img
                   src={p.avatar}
                   alt={p.name}
-                  className="rounded-full w-28 h-28 object-cover border-4 border-red-600 mb-3"
+                  className="rounded-full w-20 h-20 object-cover border-4 border-red-600 mb-3"
                 />
                 <p className="text-white text-sm font-semibold">{p.name}</p>
               </motion.div>
