@@ -198,7 +198,7 @@ export default function DeepFlixCV() {
                 <img
                   src={p.avatar}
                   alt={p.name}
-                  className="rounded-full w-20 h-20 object-cover border-4 border-red-600 mb-3"
+                  className="rounded-full w-20 h-20 object-cover border-4 border-red-600 mb-3 transition-transform duration-300 hover:scale-105"
                 />
                 <p className="text-white text-sm font-semibold">{p.name}</p>
               </motion.div>
