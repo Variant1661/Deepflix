@@ -159,11 +159,11 @@ export default function DeepFlixCV() {
                   alt="Preview"
                   className="w-full aspect-[16/9] object-cover rounded-xl"
                 />
-                <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6">
+                <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 min-h-[100px] overflow-hidden">
                   <h3 className="text-2xl md:text-3xl font-bold">
                     {safeSection.title || "Preview"}
                   </h3>
-                  <p className="text-base md:text-lg text-zinc-400 mt-2">
+                  <p className="text-base md:text-lg text-zinc-400 mt-2 line-clamp-2">
                     {safeSection.bullets?.[0] || "Highlight loading..."}
                   </p>
                 </div>
